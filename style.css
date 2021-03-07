@@ -1,0 +1,87 @@
+a {
+    font-style: italic;
+    color:rgb(209, 116, 100);
+}
+body {
+    margin: auto;
+    max-width: 50em;
+    background-color: rgb(226, 226, 226);
+}
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(241, 234, 233);
+}
+h1 {
+    font-size: 25px;
+    margin-left: 10px;
+}
+.header-text>h2 {
+    margin-left: 10px;
+    font-style: italic;
+}
+.header-photo>img {
+    max-width: 250px;
+    width: 100%;
+    margin-right: 20px;
+}
+section {
+    border: 3px solid rgb(18, 0, 83);
+    background-color: rgb(247, 249, 255);
+}
+section>h2 {
+    display:none;
+}
+article {
+    border-bottom: 3px solid grey;
+    padding: 5px 10px;
+    margin-top: -10px;
+}
+table {
+    margin-top: -20px;
+}
+.table-time {
+    width: 100px;
+    vertical-align: top;
+    padding-top: 20px;
+}
+ul>li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+li>div {
+    font-size: 5em;
+    line-height: .4em;
+    text-align: right;
+    margin-right: 20px;
+    margin-top: -25px;
+    color: rgb(18, 0, 83);
+}
+  
+div>span {
+    margin-left: -20px;
+    color: lightskyblue;
+}
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(171, 238, 238);
+}
+.CV-time {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.GHimage {
+    margin-top: -25px;
+    margin-right: 50px;
+    height: 70px;
+    width: 70px;
+}
+
+.RSSimage {
+    margin-top: -25px;
+    height: 100px;
+    width: 100px;
+}
