@@ -17,7 +17,7 @@ h1 {
     font-size: 25px;
     margin-left: 10px;
 }
-h2 {
+.header-text>h2 {
     margin-left: 10px;
     font-style: italic;
 }
@@ -29,6 +29,9 @@ h2 {
 section {
     border: 3px solid rgb(18, 0, 83);
     background-color: rgb(247, 249, 255);
+}
+section>h2 {
+    display:none;
 }
 article {
     border-bottom: 3px solid grey;
