@@ -21,6 +21,7 @@ html {
 body {
   margin: 0;
   background-color: rgb(226, 226, 226);
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -429,6 +430,10 @@ li > .points {
   }
 }
 @media screen and (max-width: 550px) {
+  .wrapper {
+    margin: 0;
+    max-width: 100%;
+  }
   .foot_figure {
     margin: 0;
     margin-right: 10%;
