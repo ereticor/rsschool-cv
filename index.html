@@ -11,7 +11,49 @@
 </head>
 <body>
   <header class="header">
-    Template
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="list_item header__list_item">
+          <a href="#intro">
+            intro
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#contacts">
+            contacts
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#projects">
+            projects
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#exp" id="head">
+            experience
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#edu">
+            education
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#skills">
+            skills
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#lang">
+            languages
+          </a>
+        </li>
+      </ul>
+      <div class="menu_over"></div>
+    </nav>
+    <div class="header__menu">
+      <span></span>
+    </div>
   </header>
   <main class="main">
       <div class="wrapper">
@@ -29,7 +71,7 @@
           </div>
           </article>
         <article class="about__info">
-          <h3 class="article-header">Personal information</h3>
+          <h3 class="article-header" id="intro">Personal information</h3>
           <ul>
             <li><p class="text">My current goal is to fully study JS and 
             its features and master the Front-end developer 
@@ -52,7 +94,7 @@
           </details>
           </article>
         <article class="about__contacts">
-          <h3 class="article-header">Contact information</h3>
+          <h3 class="article-header" id="contacts">Contact information</h3>
           <ul class="contacts__list">
             <li class="contacts__list_item">
               <a href="tel:+375-44-567-88-99" class="contacts_item_link">
@@ -84,7 +126,7 @@
       </section>
       <section>  
         <article>
-          <h3 class="article-header">Projects</h3>
+          <h3 class="article-header" id="projects">Projects</h3>
           <ul class="projects__list">
             <li class="projects__list_item">
               <a href="https://ereticor.github.io/RSStasks/wildlife/" class="projects_item_link">
@@ -202,7 +244,7 @@
           </ul>
         </article>
         <article>
-          <h3 class="article-header">Experience</h3>
+          <h3 class="article-header" id="exp">Experience</h3>
           <table class="experience">
             <tr>
               <td class="experience_interval interval">
@@ -227,7 +269,7 @@
           </table>
         </article>
         <article>
-          <h3 class="article-header">Education</h3>
+          <h3 class="article-header" id="edu">Education</h3>
           <table>
             <tr>
               <td class="edu_interval interval">
@@ -276,7 +318,7 @@
       </section>
       <section>  
         <article class="skills__tech">
-          <h3 class="article-header">Skills</h3>
+          <h3 class="article-header" id="skills">Skills</h3>
           <h4>Front-end development</h4>
           <ul>
             <li>
@@ -409,7 +451,7 @@
           </details>
         </article>
         <article class="skill__lang">
-          <h3 class="article-header">Languages</h3>
+          <h3 class="article-header" id="lang">Languages</h3>
           <ul>
             <li>
             Russian
@@ -455,7 +497,7 @@
     </div>
   </main>
     <footer class="foot">
-      <div class="foot__left foot__half">
+      <div class="foot__left foot__half" id="foot">
         <time class="CV-time" datetime="2021-09-18">
           @ 2021-09-18
         </time>
@@ -476,5 +518,6 @@
         </figure>
       </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
