@@ -7,163 +7,346 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RSStask</title>
   <link rel="shortcut icon" href="./docs/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./docs/highlight/styles/atelier-sulphurpool.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="./docs/highlight/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 <body>
-  <header>
-    <div class="header-text">
-      <h1>Bahamazau Mikita Siarheevich</h1>
-      <h2>Front-end developer</h2>
-    </div>
-    <div class="header-photo">
-      <img src="./docs/photo.jpg" alt="personal photo" >
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="list_item header__list_item">
+          <a href="#intro">
+            intro
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#contacts">
+            contacts
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#projects">
+            projects
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#exp" id="head">
+            experience
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#edu">
+            education
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#skills">
+            skills
+          </a>
+        </li>
+        <li class="list_item header__list_item">
+          <a href="#lang">
+            languages
+          </a>
+        </li>
+      </ul>
+      <div class="menu_over"></div>
+    </nav>
+    <div class="header__menu">
+      <span></span>
     </div>
   </header>
-  <main>
-    <section>
-      <h2>SOME FLEX</h2>
-      <article>
-        <h3 class="article-header">Contact information</h3>
-        <ul>
-          <li>phone: <a href="tel:+375-44-567-88-99">+375-44-567-88-99</a></li>
-          <li>email: <a href="mailto:ereticor@gmail.com">ereticor@gmail.com</a></li>
-          <li>GitHub: <a href="https://github.com/ereticor" target="_blank">github.com/ereticor</a></li>
-          <li>StackOverflow: <a href="https://stackoverflow.com/users/15322848/ereticor" target="_blank">stackoverflow.com/users/15322848/ereticor</a></li>
-          <li>website: <a href="http://granata.byethost33.com" target="_blank">granata.byethost33.com</a></li>
-        </ul>
-      </article>
-      <article>
-        <h3 class="article-header">Personal information</h3>
-        <ul>
-          <li><p class="text">My current goal is to fully study JS and 
-          its features and master the Front-end developer 
-          profession for further productive work.</p></li>
-          <li><p class="text">My strengths lie in the quick mastering of 
-          new material in any direction and the ability 
-          to draw out knowledge from other people for the 
-          fastest mastering of the necessary skills, so i 
-          can catch up at no time.</p></li>
-        </ul>
+  <main class="main">
+    <h1 class="hidden">SOME FLEXOUS</h1>
+      <div class="wrapper">
+      <section class="main__about">
+        <h2 class="hidden">SOME FLEXOUS</h2>
+        <article class="about__intro">
+          <div class="intro__wrapper">
+            <div class="about__intro_text">
+              <h2 class="intro_text_name">Bahamazau Mikita Siarheevich</h2>
+              <h2>Front-end developer</h2>
+            </div>
+            <div class="about__intro_photo">
+              <img src="./docs/photo.jpg" alt="personal photo" >
+            </div>
+          </div>
+          </article>
+        <article class="about__info">
+          <h3 class="article-header" id="intro">Personal information</h3>
+          <ul>
+            <li><p class="text">My current goal is to fully study JS and 
+            its features and master the Front-end developer 
+            profession for further productive work.</p></li>
+            <li><p class="text">My strengths lie in the quick mastering of 
+            new material in any direction and the ability 
+            to draw out knowledge from other people for the 
+            fastest mastering of the necessary skills, so i 
+            can catch up at no time.</p></li>
+          </ul>
+          <details class="about__info__detail extra">
+            <summary class="video_header extra_header">Self introduction video</summary>
+            <iframe 
+                class="about__info_video"
+                src="https://www.youtube.com/embed/6H6mvIEmIDI" 
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+          </details>
+          </article>
+        <article class="about__contacts">
+          <h3 class="article-header" id="contacts">Contact information</h3>
+          <ul class="contacts__list">
+            <li class="contacts__list_item">
+              <a href="tel:+375-44-567-88-99" class="contacts_item_link">
+                <img src="./docs/contacts/phone.webp" alt="phone number" class="link_img">
+              </a>
+            </li>
+            <li class="contacts__list_item">
+              <a href="mailto:ereticor@gmail.com" class="contacts_item_link">
+                <img src="./docs/contacts/gmail.webp" alt="mail" class="link_img">
+              </a>
+            </li>
+            <li class="contacts__list_item">
+              <a href="https://github.com/ereticor" class="contacts_item_link" target="_blank">
+                <img src="./docs/contacts/github.webp" alt="github" class="link_img">
+              </a>
+            </li>
+            <li class="contacts__list_item">
+              <a href="https://www.linkedin.com/in/ereticor/" class="contacts_item_link" target="_blank">
+                <img src="./docs/contacts/linkedin.webp" alt="linkedin" class="link_img">
+              </a>
+            </li>
+            <li class="contacts__list_item">
+              <a href="http://granata.byethost33.com" class="contacts_item_link" target="_blank">
+                <img src="./docs/contacts/personal.webp" alt="personal site" class="link_img">
+              </a>
+            </li>
+          </ul>
         </article>
-      <article>
-        <h3 class="article-header">Projects</h3>
-        <table class="projects">
-          <tr>
-            <td class="table-time"><time datetime="2021-01" class="time-interval">2021-01 - current time</time></td>
-            <td><h4>RHEED simulation on JS</h4></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><p>Developed a application for simulating the process 
-        of high-energy electron diffraction (<a href="https://github.com/ereticor/RHEED" target="_blank">RHEED</a>) to study the 
-        crystal structure of 2D materials 
-        (initially only for monoatomic graphene films)</p></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <h3 class="article-header">Experience</h3>
-        <table class="experience">
-          <tr>
-            <td class="table-time"><time datetime="2020-12" class="time interval">2020-12 - current time</time></td>
-            <td><h4>Nope</h4></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td><p>yikes, only non-commercial</p></td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <h3 class="article-header">Education</h3>
-        <table>
-          <tr>
-            <td class="table-time"><time datetime="2020-12" class="time interval">2020-12 - current time</time></td>
-            <td>
-              <ul>
-                <li>YDKJS</li>
-                <li>YouTube lessons:
-                  <ul>
-                    <li><a href="https://www.youtube.com/watch?v=NUtloXE1L9U&list=PLNkWIWHIRwMFtHHg0amAgocYP-kZypbY7" target="_blank">HTML Basics</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=8pQKDVRc0T8&list=PLNkWIWHIRwMHUawuIEpPI_tOG7Mfhs_sA" target="_blank">CSS Basics</a></li>
-                    <li><a href="https://www.youtube.com/user/Computerphile" target="_blank">Computerphile</a></li>
-                    <li><a href="https://www.youtube.com/c/VladilenMinin" target="_blank">Minin</a></li>
-                  </ul>
-               </li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </article>
-      <article>
-        <h3 class="article-header">Skills</h3>
-        <h4>Programming languages</h4>
-        <ul>
-          <li>
-          JS
-          <div>
-            &middot;&middot;&middot;
-            <span>
-              &middot;&middot;
-            </span>
-          </div>
-          </li>
-          <li>
-          C++
-          <div>
-            &middot;&middot;
-            <span>
-              &middot;&middot;&middot;
-            </span>
-          </div>
-          </li>
-          <li>
-          C#
-          <div>
-            &middot;&middot;&middot;
-            <span>
-              &middot;&middot;
-            </span>
-          </div>
-          </li>
-        </ul>
-        <h4>Development tools</h4>
-        <ul>
-          <li>
-          GitHub
-          <div>
-            &middot;&middot;&middot;
-            <span>
-              &middot;&middot;
-            </span>
-          </div>
-          </li>
-          <li>
-          StackOverflow
-          <div>
-            &middot;
-            <span>
-              &middot;&middot;&middot;&middot;
-            </span>
-          </div>
-          </li>
-        </ul>
-      </article>
-      <article>
-        <h3 class="article-header">Languages</h3>
-        <ul>
-          <li>
-          Russian
-          <div>
-            &middot;&middot;&middot;&middot;&middot;
-          </div>
-          </li>
-          <li>
-            English:
+      </section>
+      <section>  
+        <h2 class="hidden">SOME FLEXOUS</h2>
+        <article>
+          <h3 class="article-header" id="projects">Projects</h3>
+          <ul class="projects__list">
+            <li class="projects__list_item">
+              <a href="https://ereticor.github.io/RSStasks/wildlife/" class="projects_item_link">
+                <figure class="projects_item_fig">
+                  <img src="./docs/projects/wildlife.png" alt="wildlife" class="projects_item_img">
+                  <figcaption class="projects_item_cap">
+                    <h4 class="projects_cap_heading">Wildlife</h4>
+                    <p class="projects_cap_info">
+                      Single page layout
+                    </p>
+                    <p class="projects_cap_info">
+                      HTML
+                      CSS
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="projects__list_item">
+              <a href="https://ereticor.github.io/RSStasks/virtual-piano" class="projects_item_link">
+                <figure class="projects_item_fig">
+                  <img src="./docs/projects/virtual-piano.png" alt="virtual piano" class="projects_item_img">
+                  <figcaption class="projects_item_cap">
+                    <h4 class="projects_cap_heading">Virtual piano</h4>
+                    <p class="projects_cap_info"></p>
+                    <p class="projects_cap_info">
+                      HTML
+                      CSS
+                      JS <br>
+                      Events <br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="projects__list_item">
+              <a href="https://ereticor.github.io/RSStasks/photo-filter" class="projects_item_link">
+                <figure class="projects_item_fig">
+                  <img src="./docs/projects/photo-filter.png" alt="photo filter" class="projects_item_img">
+                  <figcaption class="projects_item_cap">
+                    <h4 class="projects_cap_heading">Photo filter</h4>
+                    <p class="projects_cap_info">
+                      Web photoeditor using filters
+                    </p>
+                    <p class="projects_cap_info">
+                      HTML
+                      CSS
+                      JS <br>
+                      Canvas drawing <br>
+                      file creation <br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="projects__list_item">
+              <a href="https://ereticor.github.io/RSStasks/online-zoo/pages/landing" class="projects_item_link">
+                <figure class="projects_item_fig">
+                  <img src="./docs/projects/online-zoo.png" alt="online zoo" class="projects_item_img">
+                  <figcaption class="projects_item_cap">
+                    <h4 class="projects_cap_heading">Online zoo</h4>
+                    <p class="projects_cap_info">
+                      Multipage site about feeding your favorite animals online
+                    </p>
+                    <p class="projects_cap_info">
+                      HTML
+                      CSS
+                      JS <br>
+                      Multipage,
+                      Adaptive design <br>
+                      Pop-ups,
+                      Sliders <br>
+                      Iframes,
+                      Events <br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+            <li class="projects__list_item">
+              <a href="https://ereticor.github.io/RHEED/" class="projects_item_link">
+                <figure class="projects_item_fig">
+                  <img src="./docs/projects/rheed.png" alt="RHEED" class="projects_item_img">
+                  <figcaption class="projects_item_cap">
+                    <h4 class="projects_cap_heading">RHEED simulation on JS</h4>
+                    <p class="projects_cap_info">
+                      Simulation of high-energy electron diffraction (RHEED)
+                      analysis to study the crystal structure of 2D materials
+                    </p>
+                    <p class="projects_cap_info">
+                      HTML
+                      CSS
+                      JS <br>
+                      Canvas drawing <br>
+                      data writing <br>
+                      file creation <br>
+                      Events <br>
+                    </p>
+                  </figcaption>
+                </figure>
+              </a>
+            </li>
+          </ul>
+          <details class="about__projects__example extra">
+            <summary class="example_header example_header extra_header">Code example</summary>
+            <pre>
+              <code class="javascript hljs language-javascript">
+                class DepthCalculator {
+                  calculateDepth( arr ) {
+                    let counter = 1;
+                    for (let i = 0; i &lt; arr.length; i++) {
+                      if (Array.isArray(arr[i])) {
+                        counter += this.calculateDepth(arr.flat());
+                        break;
+                      }
+                    }
+                    return counter;
+                  }
+                }
+              </code>
+            </pre>
+          </details>
+        </article>
+        <article>
+          <h3 class="article-header" id="exp">Experience</h3>
+          <table class="experience">
+            <tr>
+              <td class="experience_interval interval">
+                <time datetime="2020-01" class="time interval">2020-01 -<br> 2020-06</time> 
+              </td>
+              <td><h4>Sales manager - A1</h4></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><p>Registration of contracts for connecting home Internet and television in houses served by campaign equipment.</p></td>
+            </tr>
+            <tr>
+              <td class="experience_interval interval">
+                <time datetime="2021-08" class="time interval">2021-08 -<br> current time</time>
+              </td>
+              <td><h4>Electronic engineer - R&D BSUIR LAB 4.6</h4></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><p>Development of software for modeling the structure of two-dimensional materials and RHEED-analysis (refracted high energy electron diffraction) of these structures.</p></td>
+            </tr>
+          </table>
+        </article>
+        <article>
+          <h3 class="article-header" id="edu">Education</h3>
+          <table>
+            <tr>
+              <td class="edu_interval interval">
+                <time datetime="2021-08" class="time interval">2017-09 -<br> 2021-06</time>
+              </td>
+              <td><h4>Faculty of Radioengineering and Electronics</h4></td>
+            </tr>
+            <tr>
+              <td><img src="./docs/education/bsuir.svg" alt="BSUIR" class="edu_img" title="BSUIR"></td>
+              <td>
+                <p>
+                  Graduated from Belarusian State University of Informatics and Radioelectronics 
+                  as an engineer of electronic technology. Participated in two scientific conferences.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="edu_interval interval">
+                <time datetime="2021-08" class="time interval">2021-09 -<br> current time</time>
+              </td>
+              <td><h4>Front-end 2021Q3</h4></td>
+            </tr>
+            <tr>
+              <td><img src="./docs/education/rss.svg" alt="BSUIR" class="edu_img" title="RSSchool"></td>
+              <td>
+                <p>
+                  Currently doing the RSSchool frontend course. I’m strenuously studying all the necessary 
+                  information for this profession.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td class="edu_interval interval">
+                <time datetime="2020-12" class="time interval">2021-03 - current time</time>
+              </td>
+              <td><h4>Self education</h4></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <ul>
+                  <li>YDKJS</li>
+                  <li><a href="https://learn.javascript.ru/">learn.javascript</a></li>
+                  <li>YouTube lessons:
+                    <ul>
+                      <li><a href="https://www.youtube.com/watch?v=NUtloXE1L9U&list=PLNkWIWHIRwMFtHHg0amAgocYP-kZypbY7" target="_blank">HTML Basics</a></li>
+                      <li><a href="https://www.youtube.com/watch?v=8pQKDVRc0T8&list=PLNkWIWHIRwMHUawuIEpPI_tOG7Mfhs_sA" target="_blank">CSS Basics</a></li>
+                      <li><a href="https://www.youtube.com/user/Computerphile" target="_blank">Computerphile</a></li>
+                    </ul>
+                 </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <section>  
+        <h2 class="hidden">SOME FLEXOUS</h2>
+        <article class="skills__tech">
+          <h3 class="article-header" id="skills">Skills</h3>
+          <h4>Front-end development</h4>
           <ul>
             <li>
-              listening
-              <div>
+              JS
+              <div class="tech__points points">
                 &middot;&middot;&middot;&middot;
                 <span>
                   &middot;
@@ -171,8 +354,8 @@
               </div>
             </li>
             <li>
-              reading
-              <div>
+              HTML
+              <div class="tech__points points">
                 &middot;&middot;&middot;&middot;
                 <span>
                   &middot;
@@ -180,8 +363,47 @@
               </div>
             </li>
             <li>
-              speaking
-              <div>
+              CSS
+              <div class="tech__points points">
+                &middot;&middot;&middot;&middot;
+                <span>
+                  &middot;
+                </span>
+              </div>
+            </li>
+            <li>
+              TS
+              <div class="tech__points points">
+                &middot;&middot;
+                <span>
+                  &middot;&middot;&middot;
+                </span>
+              </div>
+            </li>
+          </ul>
+          <h4>Tools</h4>
+          <ul>
+            <li>
+              Git
+              <div class="tech__points points">
+                &middot;&middot;&middot;
+                <span>
+                  &middot;&middot;
+                </span>
+              </div>
+            </li>
+            <li>
+              Webpack
+              <div class="tech__points points">
+                &middot;&middot;
+                <span>
+                  &middot;&middot;&middot;
+                </span>
+              </div>
+            </li>
+            <li>
+              DevTools
+              <div class="tech__points points">
                 &middot;&middot;&middot;
                 <span>
                   &middot;&middot;
@@ -189,20 +411,138 @@
               </div>
             </li>
           </ul>
-          </li>
-        </ul>
-      </article>
-    </section>
+          <details class="tech__extra extra">
+            <summary class="tech__extra_header extra_header">
+              <h4>Additional</h4>
+            </summary>
+            <ul>
+              <li>
+                С++
+                <div class="tech__points points">
+                  &middot;&middot;
+                  <span>
+                    &middot;&middot;&middot;
+                  </span>
+                </div>
+              </li>
+              <li>
+                C#
+                <div class="tech__points points">
+                  &middot;&middot;
+                  <span>
+                    &middot;&middot;&middot;
+                  </span>
+                </div>
+              </li>
+              <li>
+                Photoshop
+                <div class="tech__points points">
+                  &middot;&middot;&middot;
+                  <span>
+                    &middot;&middot;
+                  </span>
+                </div>
+              </li>
+              <li>
+                Blender
+                <div class="tech__points points">
+                  &middot;
+                  <span>
+                    &middot;&middot;&middot;&middot;
+                  </span>
+                </div>
+              </li>
+              <li>
+                Autocad
+                <div class="tech__points points">
+                  &middot;&middot;&middot;
+                  <span>
+                    &middot;&middot;
+                  </span>
+                </div>
+              </li>
+              <li>
+                Virtuoso cad
+                <div class="tech__points points">
+                  &middot;&middot;&middot;&middot;
+                  <span>
+                    &middot;
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </details>
+        </article>
+        <article class="skill__lang">
+          <h3 class="article-header" id="lang">Languages</h3>
+          <ul>
+            <li>
+            Russian
+            <div class="lang__points points">
+              &middot;&middot;&middot;&middot;&middot;
+            </div>
+            </li>
+            <li>
+              English:
+            <ul>
+              <li>
+                listening
+                <div class="lang__points points">
+                  &middot;&middot;&middot;&middot;
+                  <span>
+                    &middot;
+                  </span>
+                </div>
+              </li>
+              <li>
+                reading
+                <div class="lang__points points">
+                  &middot;&middot;&middot;&middot;
+                  <span>
+                    &middot;
+                  </span>
+                </div>
+              </li>
+              <li>
+                speaking
+                <div class="lang__points points">
+                  &middot;&middot;&middot;
+                  <span>
+                    &middot;&middot;
+                  </span>
+                </div>
+              </li>
+            </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </div>
+    <aside class="main__aside aside_left"></aside>
+    <aside class="main__aside aside_right"></aside>
   </main>
-  <footer>
-    <p class="copyright">
-      <time class="CV-time" datetime="2020-03-06">@ 2020-03-06</time>
-      Дело сделано
-    </p>
-    <figure>
-      <a href="https://github.com/ereticor" target="_blank"><img class="GHimage" src="https://avatars.githubusercontent.com/u/79747854?s=460&u=1d9050801a7cf923d256d87ec1bb9000c369a76f&v=4" alt="My github account"></a>
-      <a href="https://rs.school" target="_blank"><img class="RSSimage" src="https://rs.school/images/rs_school.svg" alt="RSSchool courses"></a>
-    </figure>
-  </footer>
+    <footer class="foot">
+      <div class="foot__left foot__half" id="foot">
+        <time class="CV-time" datetime="2021-09-18">
+          @ 2021-09-18
+        </time>
+        <h5>
+          Job done
+        </h5>
+      </div>
+      <div class="foot__right foot__half">
+        <figure class="foot_figure">
+          <a href="https://github.com/ereticor" target="_blank">
+            <img class="GHimage" src="https://avatars.githubusercontent.com/u/79747854?s=460&u=1d9050801a7cf923d256d87ec1bb9000c369a76f&v=4" alt="My github account">
+          </a>
+        </figure>
+        <figure class="foot_figure">
+          <a href="https://rs.school" target="_blank">
+            <img class="RSSimage" src="https://rs.school/images/rs_school.svg" alt="RSSchool courses">
+          </a>
+        </figure>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
