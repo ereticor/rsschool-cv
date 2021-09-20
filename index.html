@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RSStask</title>
   <link rel="shortcut icon" href="./docs/icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./docs/highlight/styles/atelier-sulphurpool.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="./docs/highlight/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
 </head>
 <body>
   <header class="header">
@@ -242,6 +245,25 @@
               </a>
             </li>
           </ul>
+          <details class="about__projects__example extra">
+            <summary class="example_header example_header extra_header">Code example</summary>
+            <pre>
+              <code class="javascript hljs language-javascript">
+                class DepthCalculator {
+                  calculateDepth( arr ) {
+                    let counter = 1;
+                    for (let i = 0; i < arr.length; i++) {
+                      if (Array.isArray(arr[i])) {
+                        counter += this.calculateDepth(arr.flat());
+                        break;
+                      }
+                    }
+                    return counter;
+                  }
+                }
+              </code>
+            </pre>
+          </details>
         </article>
         <article>
           <h3 class="article-header" id="exp">Experience</h3>
