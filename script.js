@@ -14,3 +14,8 @@ navOver.addEventListener("click", () => {
   menu.classList.remove("active");
   body.classList.remove("menu__open");
 });
+
+console.group("Self-rating:");
+console.log("160/160");
+console.log("Job done");
+console.groupEnd();
