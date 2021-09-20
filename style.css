@@ -1,3 +1,26 @@
+:root {
+  --head-back-clr: rgb(59, 56, 56);
+  --main-back-clr: rgb(226, 226, 226);
+  --section-back-clr: rgb(247, 249, 255);
+  --article-back-clr: ;
+  --cap-back-clr: antiquewhite;
+  --aside-back-clr: ;
+  --foot-back-clr: rgb(171, 238, 238);
+
+  --head-menu-clr: orange;
+  --main-font-clr: ;
+  --link-clr: coral;
+
+  --section-border-clr: rgb(18, 0, 83);
+  --article-border-clr: grey;
+
+
+  --lvl-plus-clr: rgb(18, 0, 83);
+  --lvl-minus-clr: lightskyblue;
+
+  --shadow-clr: rgba(0, 0, 0, 0.2);
+}
+
 @keyframes cap-anima-in {
   0%{
     top: 100%;
@@ -6,7 +29,6 @@
     top: 0%;
   }
 }
-
 @keyframes cap-anima-out {
   0%{
     top: 0%;
@@ -15,28 +37,35 @@
     top: 100%;
   }
 }
+
 html {
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
-  background-color: rgb(226, 226, 226);
+  background-color: var(--main-back-clr);
   overflow-x: hidden;
 }
 a {
   text-decoration: none;
+  font-style: italic;
+  color: var(--link-clr);
 }
+h1 {
+  font-size: 25px;
+}
+
 .header {
   width: 100%;
   padding: 30px 0;
-  background-color: rgb(59, 56, 56);
+  background-color: var(--head-back-clr);
   text-align: center;
   border-radius: 0 0 25px 25px;
+  transition: 0.5s ease-in-out;
 }
 .header__nav {
   padding: 0 5%;
 }
-
 .nav__list {
   display: flex;
   justify-content: space-between;
@@ -47,7 +76,6 @@ a {
 .nav__list .list_item {
   list-style: none;
 }
-
 .nav__list .list_item a {
   position: relative;
 }
@@ -57,7 +85,7 @@ a {
   bottom: -5px;
   width: 0;
   height: 3px;
-  background-color: coral;
+  background-color: var(--link-clr);
   border-radius: 3px;
   -webkit-transition: width 0.2s ease-in-out;
   transition: width 0.2s ease-in-out;
@@ -80,25 +108,17 @@ a {
   justify-content: center;
   margin: 0 10%;
 }
-a {
-    font-style: italic;
-    color:rgb(209, 116, 100);
-}
-
-h1 {
-    font-size: 25px;
-}
 
 section {
-    border: 3px solid rgb(18, 0, 83);
-    background-color: rgb(247, 249, 255);
+    border: 3px solid var(--section-border-clr);
+    background-color: var(--section-back-clr);
 }
 section>h2 {
     display:none;
 }
 
 article {
-    border-bottom: 3px solid grey;
+    border-bottom: 3px solid var(--article-border-clr);
     padding: 5px 10px;
     margin-top: -10px;
 }
@@ -192,7 +212,7 @@ details[open].about__info__detail {
   transition: 0.4s all;
 }
 .link_img:hover {
-  box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 8px var(--shadow-clr);
   border-radius: 50%;
 }
 
@@ -222,12 +242,12 @@ li > .points {
     text-align: right;
     margin-right: 20px;
     margin-top: -25px;
-    color: rgb(18, 0, 83);
+    color: var(--lvl-plus-clr);
 }
   
 .points > span {
     margin-left: -20px;
-    color: lightskyblue;
+    color: var(--lvl-minus-clr);
     user-select: none;
 }
 
@@ -244,7 +264,7 @@ li > .points {
   height: 50%;
   list-style: none;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px var(--shadow-clr);
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -261,7 +281,7 @@ li > .points {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: antiquewhite;
+  background-color: var(--cap-back-clr);
   text-align: center;
   font-size: 2vw;
   line-height: 2vw;
@@ -277,7 +297,7 @@ li > .points {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: rgb(171, 238, 238);
+    background-color: var(--foot-back-clr);
 }
 .foot__half {
     height: 100%;
@@ -345,7 +365,7 @@ li > .points {
     left: -100vw;
     content: "";
     top: inherit;
-    background-color: orange;
+    background-color: var(--head-menu-clr);
     opacity: 0.5;
     transition: all 0.4s;
   }
@@ -378,7 +398,7 @@ li > .points {
   }
   .header__menu span {
     position: absolute;
-    background-color: orange;
+    background-color: var(--head-menu-clr);
     left: 0;
     top: 11.5px;
     width: 100%;
@@ -388,7 +408,7 @@ li > .points {
   .header__menu::before,
   .header__menu::after {
     content: '';
-    background-color: orange;
+    background-color: var(--head-menu-clr);
     position: absolute;
     width: 100%;
     height: 5px;
