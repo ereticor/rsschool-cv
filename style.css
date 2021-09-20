@@ -77,13 +77,17 @@ article {
 .experience {
     margin-top: -20px;
 }
-.experience_time {
+.interval {
     width: 100px;
     vertical-align: top;
     padding-top: 20px;
 }
 .experience > h4 {
   margin-top: 0;
+}
+
+.edu_img {
+  width: 80%;
 }
 
 ul > li {
