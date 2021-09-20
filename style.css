@@ -86,11 +86,11 @@ article {
   margin-top: 0;
 }
 
-ul>li {
+ul > li {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-li>div {
+li > .points {
     font-size: 5em;
     line-height: .4em;
     text-align: right;
@@ -99,21 +99,32 @@ li>div {
     color: rgb(18, 0, 83);
 }
   
-div>span {
+.points > span {
     margin-left: -20px;
     color: lightskyblue;
+    user-select: none;
 }
-details summary {
+
+.tech__extra {
+  transition: all 0.5s ease-in-out;
+  max-height: 18px;
+  overflow: hidden;
+}
+details[open].tech__extra {
+  max-height: 50vh;
+}
+.tech__extra .tech__extra_header {
   cursor: pointer;
   list-style: none;
+  user-select: none;
 }
-details summary::after {
+.tech__extra .tech__extra_header::after {
   content: ' ►';
 }
-details[open] summary::after {
+details[open].tech__extra .tech__extra_header::after {
   content: ' ▼';
 }
-details summary > * {
+.tech__extra .tech__extra_header > * {
   display: inline;
 }
 
