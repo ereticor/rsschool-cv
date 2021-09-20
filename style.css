@@ -39,7 +39,6 @@ a {
 
 h1 {
     font-size: 25px;
-    margin-left: 10px;
 }
 
 section {
@@ -57,21 +56,71 @@ article {
 }
 
 .about__intro {
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     /* background-color: rgb(241, 234, 233); */
     padding: 0;
     margin-top: 0;
 }
+.intro__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
 .about__intro_text>h2 {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-style: italic;
 }
 .about__intro_photo>img {
     max-width: 250px;
     width: 100%;
     margin-right: 20px;
+    border-radius: 10px 20px 40px 50px;
+}
+
+.extra {
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+  max-height: 30px;
+}
+details[open].extra {
+  max-height: 50vh;
+}
+.extra .extra_header {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  max-width: max-content;
+}
+.extra .extra_header::after {
+  content: ' ►';
+}
+.video_header.extra_header::before {
+  content: '◄ ';
+}
+details[open].extra .extra_header::after {
+  content: ' ▼';
+}
+details[open].extra .video_header.extra_header::before {
+  content: '▼ ';
+}
+.extra .extra_header > * {
+  display: inline;
+}
+
+details[open].about__info__detail {
+  margin-bottom: 20px;
+  height: 50vh;
+}
+.video_header {
+  text-align: center;
+  margin: 0 auto 20px;
+}
+.about__info_video {
+  margin: 0 20%;
+  width: 60%;
+  height: 100%;
 }
 
 .contacts__list {
@@ -126,29 +175,6 @@ li > .points {
     margin-left: -20px;
     color: lightskyblue;
     user-select: none;
-}
-
-.tech__extra {
-  transition: all 0.5s ease-in-out;
-  max-height: 18px;
-  overflow: hidden;
-}
-details[open].tech__extra {
-  max-height: 50vh;
-}
-.tech__extra .tech__extra_header {
-  cursor: pointer;
-  list-style: none;
-  user-select: none;
-}
-.tech__extra .tech__extra_header::after {
-  content: ' ►';
-}
-details[open].tech__extra .tech__extra_header::after {
-  content: ' ▼';
-}
-.tech__extra .tech__extra_header > * {
-  display: inline;
 }
 
 .projects__list {
@@ -234,6 +260,16 @@ details[open].tech__extra .tech__extra_header::after {
   width: 100px;
 }
 
+@media screen and (max-width: 800px) {
+  details[open].about__info__detail {
+    height: 30vh;
+  }
+  .about__info_video {
+    margin: 0 10%;
+    width: 80%;
+    height: 100%;
+  }
+}
 @media screen and (max-width: 550px) {
   .foot_figure {
     margin: 0;
@@ -242,6 +278,9 @@ details[open].tech__extra .tech__extra_header::after {
 }
 
 @media screen and (max-width: 400px) {
+  details[open].about__info__detail {
+    height: 25vh;
+  }
   .foot {
     flex-direction: column;
   }

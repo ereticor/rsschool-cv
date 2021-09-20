@@ -18,12 +18,14 @@
       <section class="main__about">
         <h2>SOME FLEXOUS</h2>
         <article class="about__intro">
-          <div class="about__intro_text">
-            <h1>Bahamazau Mikita Siarheevich</h1>
-            <h2>Front-end developer</h2>
-          </div>
-          <div class="about__intro_photo">
-            <img src="./docs/photo.jpg" alt="personal photo" >
+          <div class="intro__wrapper">
+            <div class="about__intro_text">
+              <h1>Bahamazau Mikita Siarheevich</h1>
+              <h2>Front-end developer</h2>
+            </div>
+            <div class="about__intro_photo">
+              <img src="./docs/photo.jpg" alt="personal photo" >
+            </div>
           </div>
           </article>
         <article class="about__info">
@@ -38,6 +40,16 @@
             fastest mastering of the necessary skills, so i 
             can catch up at no time.</p></li>
           </ul>
+          <details class="about__info__detail extra">
+            <summary class="video_header extra_header">Self introduction video</summary>
+            <iframe 
+                class="about__info_video"
+                src="https://www.youtube.com/embed/6H6mvIEmIDI" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+          </details>
           </article>
         <article class="about__contacts">
           <h3 class="article-header">Contact information</h3>
@@ -334,8 +346,8 @@
               </div>
             </li>
           </ul>
-          <details class="tech__extra">
-            <summary class="tech__extra_header">
+          <details class="tech__extra extra">
+            <summary class="tech__extra_header extra_header">
               <h4>Additional</h4>
             </summary>
             <ul>
