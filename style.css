@@ -103,6 +103,19 @@ div>span {
     margin-left: -20px;
     color: lightskyblue;
 }
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+details summary::after {
+  content: ' ►';
+}
+details[open] summary::after {
+  content: ' ▼';
+}
+details summary > * {
+  display: inline;
+}
 
 .projects__list {
   display: flex;
