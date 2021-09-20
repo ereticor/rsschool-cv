@@ -74,14 +74,17 @@ article {
     margin-right: 20px;
 }
 
-/* table {
+.experience {
     margin-top: -20px;
 }
-.table-time {
+.experience_time {
     width: 100px;
     vertical-align: top;
     padding-top: 20px;
-} */
+}
+.experience > h4 {
+  margin-top: 0;
+}
 
 ul>li {
     margin-top: 5px;
