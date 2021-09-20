@@ -196,13 +196,15 @@ details[open].extra {
 .extra .extra_header::after {
   content: ' ►';
 }
-.video_header.extra_header::before {
+.video_header.extra_header::before,
+.example_header.extra_header::before {
   content: '◄ ';
 }
 details[open].extra .extra_header::after {
   content: ' ▼';
 }
-details[open].extra .video_header.extra_header::before {
+details[open].extra .video_header.extra_header::before,
+details[open].extra .example_header.extra_header::before {
   content: '▼ ';
 }
 .extra .extra_header > * {
@@ -213,7 +215,8 @@ details[open].about__info__detail {
   margin-bottom: 20px;
   height: 50vh;
 }
-.video_header {
+.video_header,
+.example_header {
   text-align: center;
   margin: 0 auto 20px;
   font-family: 'Grechen Fuemen';
@@ -326,6 +329,13 @@ li > .points {
 .projects__list_item:hover .projects_item_cap {
   animation: cap-anima-in 1s 1;
   animation-fill-mode: forwards;
+}
+.about__projects__example {
+  padding-top: 15px;
+  border-top: 3px solid var(--article-border-clr);
+}
+.about__projects__example code {
+  border-radius: 10px;
 }
 
 .foot {
