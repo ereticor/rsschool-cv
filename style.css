@@ -74,6 +74,25 @@ article {
     margin-right: 20px;
 }
 
+.contacts__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 5%;
+}
+.contacts__list_item {
+  display: flex;
+  flex: 0 1 33%;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 5%;
+}
+.link_img {
+  max-width: 100px;
+}
+
 .experience {
     margin-top: -20px;
 }
