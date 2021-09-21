@@ -45,6 +45,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -401,7 +402,6 @@ li > .points {
   }
   .header {
     position: fixed;
-    width: 100%;
     z-index: 3;
     background-color: none;
     border-radius: 0;
